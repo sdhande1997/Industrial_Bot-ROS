@@ -1,0 +1,39 @@
+<?xml version= "1.0" ?>
+<robot name="kuka_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+<xacro:property name = "base_color" value = "Gazebo/Black"/>
+<xacro:property name = "body_color" value = "Gazebo/Turquoise "/>
+<xacro:property name = "body_color_2" value = "Gazebo/Turquoise"/>
+<xacro:property name = "end_effector_color" value = "Gazebo/ZincYellow"/>
+
+
+<gazebo reference = "base_link">
+    <material>${base_color}</material>
+</gazebo>
+
+<gazebo reference = "lower1_link">
+    <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference = "lower2_link">
+    <material>${body_color_2}</material>
+</gazebo>
+
+<gazebo reference = "upper1_link">
+    <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference = "upper2_link">
+    <material>${body_color_2}</material>
+</gazebo>
+
+<gazebo reference = "top_link">
+    <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference = "end_effector_link">
+    <material>${end_effector_color}</material>
+</gazebo>
+
+</robot>

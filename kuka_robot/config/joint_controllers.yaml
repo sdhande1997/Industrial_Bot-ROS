@@ -1,0 +1,43 @@
+joint_state_controller:
+  type : "joint_state_controller/JointStateController"
+  publish_rate : 50
+
+joint_1_pos_controller:
+  type : position_controllers/JointPositionController
+  joint : lower1_joint
+  pid : {p : 50, i : 0.0, d : 10 }
+
+joint_2_pos_controller:
+  type : position_controllers/JointPositionController
+  joint : lower2_joint
+  pid : {p : 50, i : 0.0, d : 10 }
+
+joint_3_pos_controller:
+  type : position_controllers/JointPositionController
+  joint : upper1_joint
+  pid : {p : 50, i : 0.0, d : 10 }
+
+joint_4_pos_controller:
+  type : position_controllers/JointPositionController
+  joint : upper2_joint
+  pid : {p : 50, i : 0.0, d : 10 }
+
+joint_5_pos_controller:
+  type : position_controllers/JointPositionController
+  joint : top_joint
+  pid : {p : 50, i : 0.0, d : 10 }
+
+joint_6_pos_controller:
+  type : position_controllers/JointPositionController
+  joint : end_effector_joint
+  pid : {p : 50, i : 0.0, d : 10 }
+
+arm_controller:
+  type : position_controllers/JointTrajectoryController
+  joints :
+    - lower1_joint
+    - lower2_joint
+    - upper1_joint
+    - upper2_joint
+    - top_joint
+    - end_effector_joint

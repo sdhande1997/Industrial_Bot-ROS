@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'lower1_joint', 'lower2_joint', 'upper1_joint', 'upper2_joint', 'top_joint', 'end_effector_joint', ]

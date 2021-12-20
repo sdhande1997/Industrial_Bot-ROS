@@ -1,0 +1,56 @@
+<?xml version= "1.0" ?>
+<robot name="kuka_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:property name= "standard_friction" value = "1.0" />
+
+<gazebo reference= "base_link">
+    <mu1>${standard_friction}</mu1>
+    <mu2>${standard_friction}</mu2>
+    <selfCollide>true</selfCollide>
+    <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference= "lower1_link">
+    <mu1>${standard_friction}</mu1>
+    <mu2>${standard_friction}</mu2>
+    <selfCollide>true</selfCollide>
+    <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference= "lower2_link">
+    <mu1>${standard_friction}</mu1>
+    <mu2>${standard_friction}</mu2>
+    <selfCollide>true</selfCollide>
+    <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference= "upper1_link">
+    <mu1>${standard_friction}</mu1>
+    <mu2>${standard_friction}</mu2>
+    <selfCollide>true</selfCollide>
+    <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference= "upper2_link">
+    <mu1>${standard_friction}</mu1>
+    <mu2>${standard_friction}</mu2>
+    <selfCollide>true</selfCollide>
+    <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference= "top_link">
+    <mu1>${standard_friction}</mu1>
+    <mu2>${standard_friction}</mu2>
+    <selfCollide>true</selfCollide>
+    <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference= "end_effector_link">
+    <mu1>${standard_friction}</mu1>
+    <mu2>${standard_friction}</mu2>
+    <selfCollide>true</selfCollide>
+    <gravity>true</gravity>
+</gazebo>
+
+
+</robot>
